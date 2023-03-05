@@ -1,6 +1,6 @@
 import Greet from "./component/Title";
 import "./styles.css";
-import Welcome from "./pages/Home";
+import Message from "./pages/Home";
 
 export default function App() {
   return (
@@ -8,7 +8,7 @@ export default function App() {
       <Greet name="Priya" />
       <Greet name="Good Morning" />
       <Greet name="Are you alright " />
-      <Welcome />
+      <Message />
     </div>
   );
 }
