@@ -6,8 +6,8 @@ export default function App() {
   return (
     <div className="App">
       <Greet name="Priya" />
-      <Greet name="D" />
-      <Greet name="Prajapati" />
+      <Greet name="Good Morning" />
+      <Greet name="Are you alright " />
       <Welcome />
     </div>
   );
