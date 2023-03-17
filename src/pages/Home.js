@@ -1,25 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
+import Title from '../component/Title'
 
-class Message extends Component {
-  constructor() {
-    super();
-    this.state = {
-      message: "Welcome visitors",
-    };
-  }
-  changeMessage() {
-    this.setState({
-      message: "Thank you for subscribing",
-    });
-  }
+export default class Home extends Component {
   render() {
     return (
-      <div>
-        <h1> {this.state.message} </h1>
-        <button onClick={() => this.changeMessage()}>subscribe</button>
-      </div>
-    );
+      <>
+        <p>This is Home Page</p>
+        <Title />
+      </>
+    )
   }
 }
-
-export default Message;

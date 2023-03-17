@@ -1,13 +1,16 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
+import React from "react";
+import ReactDOM from "react-dom";
+import ButtonAppBar from "./Component/Header";
+import "./index.css";
 import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import DemoUser from "./component/About";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+ReactDOM.render(
+  <React.StrictMode>
+    <DemoUser />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
+
+serviceWorker.unregister();

@@ -1,14 +1,31 @@
-import Greet from "./component/Title";
-import "./styles.css";
-import Message from "./pages/Home";
+import { enableRipple } from "@syncfusion/ej2-base";
+import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
+import { useState } from "react";
+import * as ReactDom from "react-dom";
+import Home from "./pages/Home";
+import About from "./component/About";
+import "./App.css";
+import Loginpage from "./pages/Loginpage";
 
-export default function App() {
-  return (
-    <div className="App">
-      <Greet name="Priya" />
-      <Greet name="Good Morning" />
-      <Greet name="Are you alright " />
-      <Message />
-    </div>
-  );
+enableRipple(true);
+
+function App() {
+  return <ButtonComponent>Button</ButtonComponent>;
 }
+return (
+<div className="App">
+{
+  /* <p>This is App Page</p> */
+}
+{
+  /* <button onClick ={()=>setToggle(!toggle)}>Change Button</button> */
+}
+{
+  /* {toggle ? <Home /> : <About />} */
+}
+ <Loginpage />
+ </div>
+ );
+}
+export default App;
+ReactDom.render(<App />, document.getElementById("button"));
